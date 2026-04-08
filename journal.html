@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Journal | Venue Guides, Tips &amp; Real Weddings | EKO Films</title>
+    <meta name="description" content="Wedding planning tips, Dorset and Hampshire venue guides, and real wedding stories from EKO Wedding Videography. Inspiration for your special day.">
+    <link rel="canonical" href="https://www.ekoevents.co.uk/journal.html">
+    <meta name="keywords" content="wedding venues Dorset, wedding planning tips, Hampshire wedding venues, real weddings Dorset">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ekoevents.co.uk/journal.html">
+    <meta property="og:title" content="Wedding Journal | EKO Wedding Films">
+    <meta property="og:description" content="Wedding planning tips, Dorset and Hampshire venue guides, and real wedding stories from EKO Wedding Videography. Inspiration for your special day.">
+    <meta property="og:image" content="images/eko-logo.jpg">
+    <meta property="og:site_name" content="EKO Wedding Films">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wedding Journal | EKO Wedding Films">
+    <meta name="twitter:description" content="Wedding planning tips, Dorset and Hampshire venue guides, and real wedding stories from EKO Wedding Videography. Inspiration for your special day.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --white: #ffffff;
+            --off-white: #f9f9f9;
+            --light-grey: #f2f2f2;
+            --mid-grey: #e0e0e0;
+            --text-dark: #2c2c2c;
+            --text-body: #555555;
+            --text-light: #888888;
+            --dark-bg: #1a1a1a;
+            --accent: #c5a47e;
+            --accent-hover: #b8935e;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Lato', 'Helvetica Neue', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--text-body);
+            line-height: 1.7;
+            font-weight: 300;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+        /* ── NAV ── */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; transition: all 0.35s; }
+        .nav.scrolled { background: var(--white); padding: 12px 0; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .nav .container { display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo img { height: 64px; width: auto; }
+        .nav-logo .logo-white { display: block; }
+        .nav-logo .logo-dark { display: none; }
+        .nav.scrolled .nav-logo .logo-white { display: none; }
+        .nav.scrolled .nav-logo .logo-dark { display: block; }
+        .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+        .nav-links a { font-size: 13px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.85); transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--white); }
+        .nav.scrolled .nav-links a { color: var(--text-body); }
+        .nav.scrolled .nav-links a:hover, .nav.scrolled .nav-links a.active { color: var(--text-dark); }
+        .nav-hitched img { height: 50px; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+        .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); transition: all 0.3s; }
+        .nav.scrolled .nav-toggle span { background: var(--text-dark); }
+
+        /* ── PAGE HERO ── */
+        .page-hero {
+            background: var(--dark-bg);
+            padding: 160px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 60%, rgba(197,164,126,0.07) 0%, transparent 65%);
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .page-hero p {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            color: rgba(255,255,255,0.5);
+            max-width: 540px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* ── JOURNAL GRID ── */
+        .journal-section {
+            background: var(--off-white);
+            padding: 60px 0 80px;
+        }
+
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        /* ── CARD ── */
+        .card {
+            background: var(--white);
+            border: 1px solid var(--mid-grey);
+            overflow: hidden;
+            transition: box-shadow 0.4s, transform 0.4s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+            transform: translateY(-4px);
+        }
+
+        .card-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .card:hover .card-image img { transform: scale(1.04); }
+
+        .card-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+        }
+
+        .card-body {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-date {
+            font-size: 12px;
+            color: var(--text-light);
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .card-body h3 {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .card-body h3 a:hover { color: var(--accent); }
+
+        .card-excerpt {
+            font-size: 14px;
+            line-height: 1.75;
+            color: var(--text-body);
+            flex: 1;
+            margin-bottom: 16px;
+        }
+
+        .card-link {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            transition: color 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-link:hover { color: var(--accent-hover); }
+
+        .card-link svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-link svg { transform: translateX(3px); }
+
+        /* ── FEATURED / HERO CARD ── */
+        .featured-card {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            background: var(--white);
+            border: 1px solid var(--mid-grey);
+            overflow: hidden;
+            transition: box-shadow 0.4s;
+            margin-bottom: 12px;
+        }
+
+        .featured-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.07); }
+
+        .featured-card .card-image img {
+            width: 100%;
+            height: 100%;
+            min-height: 340px;
+            object-fit: cover;
+            aspect-ratio: auto;
+        }
+
+        .featured-card .card-body { padding: 40px 36px; justify-content: center; }
+
+        .featured-card h3 {
+            font-family: var(--font-heading);
+            font-size: 26px;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 14px;
+            line-height: 1.3;
+        }
+
+        .featured-label {
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        /* ── CTA BAND ── */
+        .cta-band {
+            background: var(--dark-bg);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-band h2 {
+            font-family: var(--font-heading);
+            font-size: 30px;
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .cta-band p {
+            color: rgba(255,255,255,0.6);
+            max-width: 480px;
+            margin: 0 auto 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            border: 1px solid var(--white);
+            color: var(--white);
+            background: none;
+        }
+
+        .btn:hover { background: var(--white); color: var(--dark-bg); }
+
+        /* ── FOOTER ── */
+        .footer { background: var(--dark-bg); color: rgba(255,255,255,0.6); padding: 50px 0 30px; border-top: 1px solid rgba(255,255,255,0.06); }
+        .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 40px; flex-wrap: wrap; }
+        .footer-logo img { height: 32px; margin-bottom: 12px; }
+        .footer-nav { list-style: none; display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-nav a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.3s; }
+        .footer-nav a:hover { color: var(--white); }
+        .footer-contact-mini { list-style: none; font-size: 13px; }
+        .footer-contact-mini li { padding: 3px 0; }
+        .footer-contact-mini a { color: rgba(255,255,255,0.6); }
+        .footer-contact-mini a:hover { color: var(--white); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; font-size: 12px; flex-wrap: wrap; gap: 8px; }
+        .footer-bottom a { color: rgba(255,255,255,0.6); }
+        .footer-bottom a:hover { color: var(--white); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .journal-grid { grid-template-columns: repeat(2, 1fr); }
+            .featured-card { grid-column: 1 / -1; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-hitched { display: none; }
+            .nav-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px; gap: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+            .nav-links.open a { color: var(--text-body) !important; }
+            .journal-grid { grid-template-columns: 1fr; }
+            .featured-card { grid-template-columns: 1fr; }
+            .featured-card .card-image img { min-height: 220px; }
+        }
+
+        
+        
+    
+        /* ─── PREMIUM INTERACTIONS ─── */
+        
+        /* Button hover fill */
+        .btn-gold, .fbtn, .form-submit {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .btn-gold::before, .fbtn::before, .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: var(--accent-hover);
+            transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: -1;
+        }
+        .btn-gold:hover::before, .fbtn:hover::before, .form-submit:hover::before { left: 0; }
+
+        /* Card hover lift */
+        .fcard, .diff-card, .feature-card, .package-card, .card, .related-card {
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .fcard:hover, .diff-card:hover, .feature-card:hover, .card:hover, .related-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+        }
+
+        /* Nav link underline */
+        .nav-links a { position: relative; }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 1px;
+            background: var(--accent);
+            transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        /* Testimonial fade */
+        .titem.active, .testimonial-item.active {
+            animation: fadeQuote 0.5s ease;
+        }
+        @keyframes fadeQuote {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FAQ smooth expand */
+        .faq-a, .faq-answer, .faq-cat-body {
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Image placeholder hover */
+        .img-placeholder { transition: background 0.4s; }
+        .img-placeholder:hover { background: #eaeaea; }
+
+        /* Hero scroll pulse */
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.2; transform: scaleY(0.6); }
+            50% { opacity: 1; transform: scaleY(1); }
+        }
+        .hero-scroll span { animation: scrollPulse 2.5s ease-in-out infinite; }
+
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ekoevents.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Journal",
+      "item": "https://www.ekoevents.co.uk/journal.html"
+    }
+  ]
+}
+    } else {
+        // Fallback: show everything
+    }
+
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+    <div class="container">
+        <a href="index.html" class="nav-logo">
+            <img class="logo-white" src="images/eko-logo-white.png" alt="EKO Events">
+            <img class="logo-dark" src="images/eko-logo-transparent.png" alt="EKO Events">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journal.html" class="active">Journal</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://www.hitched.co.uk/wedding-videographers/eko-wedding-videography_351667.htm" class="nav-hitched" target="_blank">
+            <img src="https://www.hitched.co.uk/images/sellos/partner--gg351667.png" alt="Hitched.co.uk partner">
+        </a>
+        <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background-image:linear-gradient(rgba(17,17,17,0.7),rgba(17,17,17,0.8)),url('images/couple-vintage-car.jpg');background-size:cover;background-position:center;">
+    <div class="container">
+        <h1>Journal</h1>
+        <p>Wedding guides, venue inspiration &amp; tips from our experience filming across Dorset &amp; Hampshire.</p>
+    </div>
+</section>
+
+<!-- JOURNAL GRID -->
+<section class="journal-section">
+    <div class="container">
+        <div class="journal-grid">
+
+            <!-- FEATURED POST -->
+            <div class="featured-card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/coastal-couple-kilt.jpg');background-size:cover;background-position:center;"></div>
+                </div>
+                <div class="card-body">
+                    <p class="featured-label">Latest Post</p>
+                    <h3><a href="journal/coastal-wedding-videography-dorset-hampshire.html">Coastal Wedding Videography in Dorset &amp; Hampshire: The Complete Guide</a></h3>
+                    <p class="card-date">15 March 2026</p>
+                    <p class="card-excerpt">From the Jurassic Coast to the Solent, Dorset and Hampshire offer some of the most dramatic backdrops for wedding films in the country. Here's how to make the most of your coastal celebration on camera.</p>
+                    <a href="journal/coastal-wedding-videography-dorset-hampshire.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/lulworth-cove.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Venues</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">2 March 2026</p>
+                    <h3><a href="journal/best-wedding-venues-dorset-2026.html">12 Best Wedding Venues in Dorset for 2026</a></h3>
+                    <p class="card-excerpt">From clifftop castles to rustic barns, we've filmed at dozens of Dorset venues over the past decade. Here are our top picks for couples planning a 2026 wedding.</p>
+                    <a href="journal/best-wedding-venues-dorset-2026.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/hero-couple-veil.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Tips</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">18 February 2026</p>
+                    <h3><a href="journal/wedding-videographer-cost-uk.html">How Much Does a Wedding Videographer Cost in the UK?</a></h3>
+                    <p class="card-excerpt">A transparent breakdown of what wedding videography costs in 2026, what affects pricing, and how to decide what's right for your budget.</p>
+                    <a href="journal/wedding-videographer-cost-uk.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 4 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/woodland-couple-walking.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Venues</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">4 February 2026</p>
+                    <h3><a href="journal/new-forest-wedding-venues.html">New Forest Wedding Venues: A Videographer's Perspective</a></h3>
+                    <p class="card-excerpt">The New Forest offers everything from country house elegance to woodland charm. We share our favourite venues and the best spots for golden hour footage.</p>
+                    <a href="journal/new-forest-wedding-venues.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 5 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/confetti-church-exit.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Tips</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">20 January 2026</p>
+                    <h3><a href="journal/do-you-need-a-wedding-videographer.html">Do You Really Need a Wedding Videographer? 7 Reasons You Won't Regret It</a></h3>
+                    <p class="card-excerpt">Photographs capture moments, but film captures movement, sound, and emotion. Here's why couples consistently say their wedding video was the best money they spent.</p>
+                    <a href="journal/do-you-need-a-wedding-videographer.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 6 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/military-wedding.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Real Weddings</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">8 January 2026</p>
+                    <h3><a href="journal/real-wedding-highcliffe-castle.html">Real Wedding: A Winter Celebration at Highcliffe Castle</a></h3>
+                    <p class="card-excerpt">When Mr &amp; Mrs Hartley chose Highcliffe Castle for their December wedding, the dramatic clifftop setting delivered breathtaking footage even in winter light.</p>
+                    <a href="journal/real-wedding-highcliffe-castle.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 7 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/couple-veil-garden.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Tips</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">15 December 2025</p>
+                    <h3><a href="journal/wedding-planning-timeline.html">Your Complete Wedding Planning Timeline: When to Book Everything</a></h3>
+                    <p class="card-excerpt">From venue to videographer, flowers to favours. A month-by-month checklist so nothing falls through the cracks in the lead-up to your big day.</p>
+                    <a href="journal/wedding-planning-timeline.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 8 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/bride-back-woodland.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Venues</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">28 November 2025</p>
+                    <h3><a href="journal/hampshire-wedding-venues-on-film.html">10 Hampshire Wedding Venues That Look Incredible on Film</a></h3>
+                    <p class="card-excerpt">Natural light, beautiful grounds, and character. These Hampshire venues consistently produce stunning wedding films - and we've filmed at every one.</p>
+                    <a href="journal/hampshire-wedding-venues-on-film.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+            <!-- POST 9 -->
+            <div class="card">
+                <div class="card-image">
+                    <div style="width:100%;aspect-ratio:16/10;background-image:url('images/couple-field-sunset.jpg');background-size:cover;background-position:center;"></div>
+                    <span class="card-tag">Real Weddings</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-date">10 November 2025</p>
+                    <h3><a href="journal/real-wedding-sopley-mill.html">Real Wedding: Summer at Sopley Mill with Mr &amp; Mrs York</a></h3>
+                    <p class="card-excerpt">Riverside ceremonies, golden hour portraits, and a reception that lasted until midnight. A look behind the scenes at one of our favourite Dorset weddings.</p>
+                    <a href="journal/real-wedding-sopley-mill.html" class="card-link">Read more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Ready to discuss your&nbsp;wedding?</h2>
+        <p>We'd love to hear about your plans and how we can capture your day.</p>
+        <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo"><img src="images/eko-logo-white.png" alt="EKO Events"></div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="footer-mini">
+                <li><a href="tel:01202059325">01202 059325</a></li>
+                <li><a href="mailto:info&#64;ekoevents.co.uk">info&#64;ekoevents.co.uk</a></li>
+                <li>Based in Bournemouth, UK</li>
+            </ul>
+        </div>
+
+</body>
+</html>

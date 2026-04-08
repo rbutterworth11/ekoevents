@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Husband &amp; Wife Wedding Videographers Dorset Hampshire</title>
+    <meta name="description" content="Meet Ryan and Beth, Dorset and Hampshire's husband and wife wedding videography team. Over a decade of experience capturing natural, candid wedding films from Bournemouth.">
+    <link rel="canonical" href="https://www.ekoevents.co.uk/about.html">
+    <meta name="keywords" content="husband wife wedding videographers, wedding videography team Dorset, about EKO wedding films">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ekoevents.co.uk/about.html">
+    <meta property="og:title" content="About EKO Wedding Videography | Husband &amp; Wife Team">
+    <meta property="og:description" content="Meet Ryan and Beth, Dorset and Hampshire's husband and wife wedding videography team. Over a decade of experience capturing natural, candid wedding films from Bournemouth.">
+    <meta property="og:image" content="images/eko-logo.jpg">
+    <meta property="og:site_name" content="EKO Wedding Films">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About EKO Wedding Videography | Husband &amp; Wife Team">
+    <meta name="twitter:description" content="Meet Ryan and Beth, Dorset and Hampshire's husband and wife wedding videography team. Over a decade of experience capturing natural, candid wedding films from Bournemouth.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ekoevents.co.uk/"},
+        {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.ekoevents.co.uk/about.html"}
+      ]
+    }
+    
+    // Testimonials
+    var tdots = document.querySelectorAll('.tdot');
+    var titems = document.querySelectorAll('.titem');
+    var tcur = 0;
+    function tslide(i) {
+        for (var j = 0; j < titems.length; j++) titems[j].classList.remove('active');
+        for (var j = 0; j < tdots.length; j++) tdots[j].classList.remove('active');
+        titems[i].classList.add('active');
+        tdots[i].classList.add('active');
+        tcur = i;
+    }
+    for (var j = 0; j < tdots.length; j++) {
+        (function(idx) { tdots[idx].addEventListener('click', function() { tslide(idx); }); })(j);
+    }
+    setInterval(function() { tslide((tcur + 1) % titems.length); }, 6000);
+
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --white: #ffffff;
+            --off-white: #f9f9f9;
+            --light-grey: #f2f2f2;
+            --mid-grey: #e0e0e0;
+            --text-dark: #2c2c2c;
+            --text-body: #555555;
+            --text-light: #888888;
+            --dark-bg: #111111;
+            --accent: #c5a47e;
+            --accent-hover: #b8935e;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Lato', 'Helvetica Neue', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--text-body);
+            line-height: 1.75;
+            font-weight: 300;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+        .narrow { max-width: 680px; margin: 0 auto; }
+
+        /* ─── NAV ─── */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 20px 0; transition: all 0.35s;
+        }
+        .nav.scrolled { background: var(--white); padding: 12px 0; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .nav .container { display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo img { height: 64px; }
+        .nav-logo .logo-white { display: block; }
+        .nav-logo .logo-dark { display: none; }
+        .nav.scrolled .nav-logo .logo-white { display: none; }
+        .nav.scrolled .nav-logo .logo-dark { display: block; }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { font-size: 13px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.85); transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #fff; }
+        .nav.scrolled .nav-links a { color: var(--text-body); }
+        .nav.scrolled .nav-links a:hover, .nav.scrolled .nav-links a.active { color: var(--text-dark); }
+        .nav-hitched img { height: 50px; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+        .nav-toggle span { display: block; width: 24px; height: 2px; background: #fff; }
+        .nav.scrolled .nav-toggle span { background: var(--text-dark); }
+
+        /* ─── PAGE HERO ─── */
+        .hero {
+            background: var(--dark-bg);
+            padding: 180px 0 90px;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 50% 70%, rgba(197,164,126,0.06) 0%, transparent 60%);
+        }
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(40px, 5.5vw, 56px);
+            font-weight: 400; color: #fff;
+            margin-bottom: 16px; position: relative;
+        }
+        .hero-sub {
+            font-family: var(--font-heading);
+            font-size: 19px; font-weight: 400; font-style: italic;
+            color: rgba(255,255,255,0.45);
+            position: relative;
+            line-height: 1.6;
+        }
+
+        /* ─── LABEL ─── */
+        .label {
+            font-size: 11px; font-weight: 400;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        /* ─── SECTION SPACING ─── */
+        .s-white { background: var(--white); padding: 100px 0; }
+        .s-grey { background: var(--off-white); padding: 100px 0; }
+        .s-dark { background: var(--dark-bg); color: #fff; padding: 90px 0; }
+
+        /* ─── TYPOGRAPHY ─── */
+        h2 {
+            font-family: var(--font-heading);
+            font-size: clamp(26px, 3vw, 34px);
+            font-weight: 400; color: var(--text-dark);
+            line-height: 1.3; margin-bottom: 24px;
+        }
+        .s-dark h2 { color: #fff; }
+
+        h3 {
+            font-family: var(--font-heading);
+            font-size: 22px; font-weight: 400;
+            color: var(--text-dark);
+            margin-bottom: 14px;
+        }
+
+        p { margin-bottom: 16px; }
+        p:last-child { margin-bottom: 0; }
+
+        .italic-sub {
+            font-family: var(--font-heading);
+            font-style: italic; color: var(--text-light);
+            font-size: 17px; margin-bottom: 20px;
+        }
+
+        /* ─── TWO COLUMN ─── */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .two-col-text h2 { margin-bottom: 20px; }
+        .two-col-text p { line-height: 1.85; }
+
+        .two-col-img {
+            position: relative;
+            overflow: hidden;
+        }
+        .two-col-img img {
+            width: 100%; height: 100%;
+            min-height: 380px; object-fit: cover;
+        }
+        .img-placeholder {
+            background: var(--light-grey);
+            min-height: 380px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .img-placeholder span {
+            font-style: italic; color: var(--text-light); font-size: 14px;
+        }
+
+        /* ─── SERVING LIST ─── */
+        .serving {
+            margin-top: 20px;
+            font-size: 15px; line-height: 1.7;
+        }
+        .serving strong { color: var(--text-dark); font-weight: 700; }
+
+        /* ─── CTA BUTTON ─── */
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            font-family: var(--font-body);
+            font-size: 12px; font-weight: 400;
+            letter-spacing: 2px; text-transform: uppercase;
+            transition: all 0.35s; margin-top: 28px;
+        }
+        .btn-gold { background: var(--accent); color: #fff; border: none; }
+        .btn-gold:hover { background: var(--accent-hover); }
+        .btn-outline { background: none; border: 1px solid rgba(255,255,255,0.5); color: #fff; }
+        .btn-outline:hover { background: #fff; color: var(--dark-bg); border-color: #fff; }
+
+        /* ─── TESTIMONIALS ─── */
+        .tslider { max-width: 660px; margin: 0 auto; text-align: center; }
+        .titem { display: none; }
+        .titem.active { display: block; }
+        .tquote {
+            font-family: var(--font-heading);
+            font-size: 20px; font-weight: 400; font-style: italic;
+            line-height: 1.75; color: rgba(255,255,255,0.82);
+            margin-bottom: 24px;
+        }
+        .tquote::before { content: '\201C'; color: var(--accent); }
+        .tquote::after { content: '\201D'; color: var(--accent); }
+        .tauthor { font-family: var(--font-heading); font-size: 18px; font-weight: 500; }
+        .tdots { display: flex; gap: 8px; justify-content: center; margin-top: 28px; }
+        .tdot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: rgba(255,255,255,0.2); border: none;
+            cursor: pointer; transition: background 0.3s;
+        }
+        .tdot.active { background: var(--accent); }
+
+        /* ─── DIFF CARDS ─── */
+        .diff-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px; margin-top: 48px;
+        }
+        .diff-card {
+            padding: 36px 30px;
+            background: var(--white);
+            border: 1px solid var(--mid-grey);
+            transition: box-shadow 0.35s, transform 0.35s;
+        }
+        .diff-card:hover {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+            transform: translateY(-3px);
+        }
+        .diff-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .diff-card p {
+            font-size: 15px; line-height: 1.8;
+        }
+        .diff-wide {
+            grid-column: 1 / -1;
+            max-width: 560px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* ─── PROMISE ─── */
+        .promise-list {
+            list-style: none;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .promise-list li {
+            padding: 10px 0;
+            font-size: 15px; line-height: 1.6;
+            border-bottom: 1px solid var(--mid-grey);
+        }
+        .promise-list li:last-child { border-bottom: none; }
+        .promise-list .ck { color: var(--accent); margin-right: 10px; font-weight: 700; }
+
+        /* ─── LOACH QUOTE ─── */
+        .pullquote {
+            max-width: 680px; margin: 0 auto;
+            text-align: center;
+        }
+        .pullquote blockquote {
+            font-family: var(--font-heading);
+            font-size: 18px; font-style: italic;
+            line-height: 1.85; color: var(--text-body);
+            margin-bottom: 16px;
+        }
+        .pullquote cite {
+            font-family: var(--font-heading);
+            font-size: 16px; font-style: normal;
+            font-weight: 500; color: var(--text-dark);
+        }
+
+        /* ─── TEAM PHOTO ─── */
+        .team-photo img {
+            max-width: 720px; width: 100%;
+            margin: 0 auto;
+        }
+
+        /* ─── CONTACT ─── */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px; margin-top: 48px;
+        }
+        .contact-info p { line-height: 1.8; margin-bottom: 16px; }
+        .contact-details { list-style: none; margin-top: 24px; }
+        .contact-details li { padding: 8px 0; font-size: 15px; }
+        .contact-details a:hover { color: var(--accent); }
+
+        .fg { margin-bottom: 18px; }
+        .fg label { display: block; font-size: 14px; color: var(--text-dark); margin-bottom: 6px; }
+        .fg input, .fg textarea {
+            width: 100%; border: 1px solid var(--mid-grey);
+            background: var(--white); color: var(--text-dark);
+            font-family: var(--font-body); font-size: 15px; font-weight: 300;
+            padding: 12px 14px; outline: none; border-radius: 0;
+            transition: border-color 0.3s;
+        }
+        .fg input:focus, .fg textarea:focus { border-color: var(--accent); }
+        .fg textarea { min-height: 120px; resize: vertical; }
+        .fc {
+            display: flex; gap: 8px; align-items: flex-start;
+            margin-bottom: 20px; font-size: 13px; color: var(--text-light);
+        }
+        .fc input[type="checkbox"] { margin-top: 3px; accent-color: var(--accent); }
+        .fc a { color: var(--accent); }
+        .fbtn {
+            padding: 14px 40px; background: var(--accent); color: #fff;
+            border: none; font-family: var(--font-body);
+            font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+            cursor: pointer; transition: background 0.3s;
+        }
+        .fbtn:hover { background: var(--accent-hover); }
+
+        /* ─── FOOTER ─── */
+        .footer { background: var(--dark-bg); color: rgba(255,255,255,0.6); padding: 50px 0 30px; }
+        .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 40px; flex-wrap: wrap; }
+        .footer-logo img { height: 32px; margin-bottom: 12px; }
+        .footer-nav { list-style: none; display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-nav a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.3s; }
+        .footer-nav a:hover { color: #fff; }
+        .footer-mini { list-style: none; font-size: 13px; }
+        .footer-mini li { padding: 3px 0; }
+        .footer-mini a { color: rgba(255,255,255,0.6); }
+        .footer-mini a:hover { color: #fff; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; font-size: 12px; flex-wrap: wrap; gap: 8px; }
+        .footer-bottom a { color: rgba(255,255,255,0.6); }
+        .footer-bottom a:hover { color: #fff; }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            .nav-links, .nav-hitched { display: none; }
+            .nav-toggle { display: flex; }
+            .nav-links.open {
+                display: flex; flex-direction: column;
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--white); padding: 20px; gap: 16px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            }
+            .nav-links.open a { color: var(--text-body) !important; }
+            .two-col { grid-template-columns: 1fr; gap: 40px; }
+            .diff-grid { grid-template-columns: 1fr; }
+            .diff-wide { grid-column: auto; max-width: none; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .s-white, .s-grey { padding: 70px 0; }
+        }
+
+        /* ─── DIVIDER ─── */
+        .divider {
+            width: 48px; height: 1px;
+            background: var(--accent);
+            margin: 0 auto 28px;
+        }
+        .divider-left {
+            margin: 0 0 28px 0;
+        }
+    
+        /* ─── PREMIUM INTERACTIONS ─── */
+        
+        /* Button hover fill */
+        .btn-gold, .fbtn, .form-submit {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .btn-gold::before, .fbtn::before, .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: var(--accent-hover);
+            transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: -1;
+        }
+        .btn-gold:hover::before, .fbtn:hover::before, .form-submit:hover::before { left: 0; }
+
+        /* Card hover lift */
+        .fcard, .diff-card, .feature-card, .package-card, .card, .related-card {
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .fcard:hover, .diff-card:hover, .feature-card:hover, .card:hover, .related-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+        }
+
+        /* Nav link underline */
+        .nav-links a { position: relative; }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 1px;
+            background: var(--accent);
+            transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        /* Testimonial fade */
+        .titem.active, .testimonial-item.active {
+            animation: fadeQuote 0.5s ease;
+        }
+        @keyframes fadeQuote {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FAQ smooth expand */
+        .faq-a, .faq-answer, .faq-cat-body {
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Image placeholder hover */
+        .img-placeholder { transition: background 0.4s; }
+        .img-placeholder:hover { background: #eaeaea; }
+
+        /* Hero scroll pulse */
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.2; transform: scaleY(0.6); }
+            50% { opacity: 1; transform: scaleY(1); }
+        }
+        .hero-scroll span { animation: scrollPulse 2.5s ease-in-out infinite; }
+
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+    <div class="container">
+        <a href="index.html" class="nav-logo">
+            <img class="logo-white" src="images/eko-logo-white.png" alt="EKO Events">
+            <img class="logo-dark" src="images/eko-logo-transparent.png" alt="EKO Events">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://www.hitched.co.uk/wedding-videographers/eko-wedding-videography_351667.htm" class="nav-hitched" target="_blank" rel="noopener">
+            <img src="https://www.hitched.co.uk/images/sellos/partner--gg351667.png" alt="Hitched.co.uk partner">
+        </a>
+        <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+    <div class="container">
+        <h1>About</h1>
+        <p class="hero-sub">Celebrating Love, Capturing Moments.<br>Your Wedding, Our Cinematic Story.</p>
+    </div>
+</section>
+
+
+<!-- ═══ HERE AT EKO ═══ -->
+<section class="s-white">
+    <div class="container">
+        <div class="narrow" style="text-align:center;">
+            <span class="label">Here at EKO</span>
+            <div class="divider"></div>
+            <h2>Experience the magic of Dorset and Hampshire's premier husband and wife wedding videography&nbsp;team.</h2>
+            <p>We specialise in capturing natural, authentic love stories across Dorset, Hampshire, and South England - preserving the genuine emotions and candid moments that make your day uniquely yours.</p>
+            <p>Based in Bournemouth, we bring over a decade of expertise in wedding videography to every celebration. As a married couple ourselves, we understand the emotions and significance of your wedding day. This personal connection allows us to anticipate those fleeting moments - the look between you during your vows, your parents' proud tears, the spontaneous laughter with friends - and capture them beautifully and discreetly.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ YOUR LOVE STORY ═══ -->
+<section class="s-grey">
+    <div class="container">
+        <div class="two-col">
+            <div class="two-col-text">
+                <span class="label">Our Approach</span>
+                <div class="divider divider-left"></div>
+                <h2>Your Love Story, Naturally&nbsp;Told</h2>
+                <p>We believe the best wedding films aren't staged or posed - they're captured as they naturally unfold.</p>
+                <p>Our approach is simple: we blend into your celebration, allowing you to be completely present with your loved ones whilst we document the authentic joy, emotion, and connection that makes your day special. The result? A cinematic film that truly feels like your wedding, not a performance.</p>
+            </div>
+            <div class="two-col-img">
+                <img src="images/couple-field-sunset.jpg" alt="Bride and groom at golden hour">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ WHY HUSBAND & WIFE ═══ -->
+<section class="s-white">
+    <div class="container">
+        <div class="two-col">
+            <div class="two-col-img">
+                <img src="images/military-wedding.jpg" alt="Military wedding ceremony">
+            </div>
+            <div class="two-col-text">
+                <span class="label">The EKO Difference</span>
+                <div class="divider divider-left"></div>
+                <h2>Why Choose a Husband and Wife&nbsp;Team?</h2>
+                <p>Working as a married couple gives us unique insight into wedding day emotions.</p>
+                <p>We've experienced our own wedding, so we know which moments matter most. Our seamless coordination means comprehensive coverage - whilst one of us captures your ceremony, the other is ready for those candid guest reactions and intimate family moments. We work together intuitively, ensuring nothing precious is missed whilst remaining completely unobtrusive.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ COVERING DORSET ═══ -->
+<section class="s-grey">
+    <div class="container">
+        <div class="two-col">
+            <div class="two-col-text">
+                <span class="label">Coverage</span>
+                <div class="divider divider-left"></div>
+                <h2>Covering Dorset, Hampshire &amp; South&nbsp;England</h2>
+                <p>From intimate coastal ceremonies and enchanting countryside celebrations to elegant manor house weddings - we travel wherever your love story takes you.</p>
+                <p>We know the beautiful venues across Dorset and Hampshire intimately, understanding how natural light moves through each space and where those perfect candid moments tend to happen.</p>
+                <p class="serving"><strong>Serving:</strong> Bournemouth, Poole, Christchurch, Dorset Coast, Winchester, Southampton, New Forest, Portsmouth, and destinations across South England.</p>
+                <a href="contact.html" class="btn btn-gold">Get in Touch</a>
+            </div>
+            <div class="two-col-img">
+                <img src="images/couple-long-grass.jpg" alt="Bride and groom in summer meadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="s-dark">
+    <div class="container">
+        <div class="tslider">
+            <div class="titem active" data-i="0">
+                <p class="tquote">EKO turned our wedding day at Burley Manor into a timeless tale. Their professionalism and artistic eye captured every cherished moment, creating memories we relive every year. They went above and beyond, fulfilling our every request and more.</p>
+                <p class="tauthor">Mr &amp; Mrs York</p>
+            </div>
+            <div class="titem" data-i="1">
+                <p class="tquote">EKO filmed our wedding at the Christchurch Priory and Old Vicarage. The team were very professional and lovely to chat to. We were so happy with our video and the guys captured the most special moments of our day. So lucky to have this footage to treasure forever!</p>
+                <p class="tauthor">Mr &amp; Mrs Hope</p>
+            </div>
+            <div class="titem" data-i="2">
+                <p class="tquote">From start to finish the EKO team were so helpful. We met them at the wedding show and are so happy we booked them for our wedding! Extremely happy with our film and they were so good with our guests.</p>
+                <p class="tauthor">Mr &amp; Mrs Akers</p>
+            </div>
+            <div class="tdots">
+                <button class="tdot active" data-i="0"></button>
+                <button class="tdot" data-i="1"></button>
+                <button class="tdot" data-i="2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ OUR STORY ═══ -->
+<section class="s-white">
+    <div class="container">
+        <div class="narrow" style="text-align:center;">
+            <span class="label">Our Story</span>
+            <div class="divider"></div>
+            <h2>How it all&nbsp;started</h2>
+            <p>We launched EKO Wedding Videography following our own wedding, when we realised how quickly the day passes and how precious those authentic moments become.</p>
+            <p>What began as a love for storytelling has grown into a dedicated service capturing genuine emotions and real connections. Every wedding reminds us why we're passionate about this work - it's about preserving the laughter, tears, joy, and love that make each celebration unique. These aren't just wedding films; they're family heirlooms that become more treasured with every anniversary.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ WHAT MAKES US DIFFERENT ═══ -->
+<section class="s-grey">
+    <div class="container">
+        <div style="text-align:center;">
+            <span class="label">Our Values</span>
+            <div class="divider"></div>
+            <h2>What makes us&nbsp;different</h2>
+        </div>
+        <div class="diff-grid">
+            <div class="diff-card">
+                <h3>Natural &amp;&nbsp;Unobtrusive</h3>
+                <p>We don't direct or stage your day. Instead, we document it as it naturally unfolds, capturing candid moments that reveal the authentic emotions and connections that make your celebration special.</p>
+            </div>
+            <div class="diff-card">
+                <h3>Personal&nbsp;Understanding</h3>
+                <p>As a married couple, we bring genuine empathy to every wedding. We've experienced the nerves, joy, and overwhelming love of a wedding day, and this helps us anticipate and capture those meaningful moments others might miss.</p>
+            </div>
+            <div class="diff-card">
+                <h3>Dual Perspective&nbsp;Coverage</h3>
+                <p>Two videographers working in perfect harmony means comprehensive coverage without disruption. We're positioned to capture both the main action and the candid reactions, the grand moments and the quiet, intimate exchanges.</p>
+            </div>
+            <div class="diff-card">
+                <h3>Dorset &amp; Hampshire&nbsp;Specialists</h3>
+                <p>Years of filming across both counties means we understand local venues, lighting conditions, and those perfect spots for natural couple portraits. We work seamlessly with your venue to ensure beautiful footage whilst respecting their guidelines.</p>
+            </div>
+            <div class="diff-card diff-wide">
+                <h3>Professional&nbsp;Quality</h3>
+                <p>Equipped with professional cameras, audio equipment, and backup systems, we ensure every vow, speech, and heartfelt moment is captured with crystal-clear quality - ready to be relived for generations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ WORKING WITH US ═══ -->
+<section class="s-white">
+    <div class="container">
+        <div class="narrow" style="text-align:center;">
+            <span class="label">The Experience</span>
+            <div class="divider"></div>
+            <h2>Working with&nbsp;us</h2>
+            <p>From our first conversation to delivering your finished film, we're dedicated to making the videography experience effortless and enjoyable.</p>
+            <p>We take time to understand your unique story, discuss your vision, and ensure you feel completely comfortable on camera (even if you think you're not photogenic - trust us, everyone is on their wedding day!).</p>
+            <p>On your wedding day, you'll barely notice we're there. We move quietly through your celebration, capturing the authentic moments without interrupting the flow. No awkward posing, no disrupting conversations - just natural, beautiful documentation of your day as it happens.</p>
+            <a href="contact.html" class="btn btn-gold">Book Now</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ OUR PROMISE ═══ -->
+<section class="s-grey">
+    <div class="container">
+        <div style="text-align:center;">
+            <span class="label">What You Get</span>
+            <div class="divider"></div>
+            <h2>Our&nbsp;Promise</h2>
+        </div>
+        <ul class="promise-list">
+            <li><span class="ck">&#10003;</span> Discreet, professional service throughout your day</li>
+            <li><span class="ck">&#10003;</span> Natural, candid filming that captures authentic emotions</li>
+            <li><span class="ck">&#10003;</span> Crystal-clear audio of your vows and speeches</li>
+            <li><span class="ck">&#10003;</span> Beautiful cinematic editing that tells your unique story</li>
+            <li><span class="ck">&#10003;</span> Films delivered within 10 weeks of your wedding</li>
+            <li><span class="ck">&#10003;</span> Fully insured with professional backup equipment</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- ═══ LOACH TESTIMONIAL ═══ -->
+<section class="s-white">
+    <div class="container">
+        <div class="pullquote">
+            <blockquote>"Ryan and Beth are so friendly, they faded into the background on the day, made us feel at ease throughout, was prompt and professional leading up to it, but most importantly they really captured the essence of the day. The film quality is excellent and the turn around time to get the edited footage back to us was quick. The drone footage also gave the video some context of where we got married which really added to the film. We would 100% recommend them to anyone!!"</blockquote>
+            <cite>Mr &amp; Mrs Loach</cite>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ TEAM PHOTO ═══ -->
+<section class="s-grey" style="padding: 60px 0;">
+    <div class="container">
+        <div class="team-photo">
+            <img src="images/ryan-and-beth.jpg" alt="Ryan and Beth - EKO Wedding Videography">
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ CONTACT ═══ -->
+<section class="s-white" id="contact">
+    <div class="container">
+        <div style="text-align:center;">
+            <span class="label">Get in Touch</span>
+            <div class="divider"></div>
+            <h2>Let's discuss your wedding&nbsp;videography</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p>We'd love to hear about your wedding plans! Whether you're getting married in Dorset, Hampshire, or across South England, we're here to answer your questions and discuss how we can capture your special day.</p>
+                <p>We typically respond within 24 hours and are happy to arrange a phone call, video chat, or in-person meeting at your convenience.</p>
+                <ul class="contact-details">
+                    <li><a href="tel:01202059325">01202 059325</a></li>
+                    <li><a href="mailto:info&#64;ekoevents.co.uk">info&#64;ekoevents.co.uk</a></li>
+                    <li>Based in Bournemouth, UK</li>
+                    <li>Covering Dorset, Hampshire &amp; South England</li>
+                </ul>
+            </div>
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you.html"><input type="hidden" name="form-name" value="contact">
+                <div class="fg"><label for="name">Name</label><input type="text" id="name" required></div>
+                <div class="fg"><label for="email">Email</label><input type="email" id="email" required></div>
+                <div class="fg"><label for="message">Message</label><textarea id="message" required></textarea></div>
+                <div class="fc">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">I agree to the storage and handling of my data. <a href="privacy-policy.html">Privacy Policy</a>.</label>
+                </div>
+                <button type="submit" class="fbtn">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo"><img src="images/eko-logo-white.png" alt="EKO Events"></div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="footer-mini">
+                <li><a href="tel:01202059325">01202 059325</a></li>
+                <li><a href="mailto:info&#64;ekoevents.co.uk">info&#64;ekoevents.co.uk</a></li>
+                <li>Based in Bournemouth, UK</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <span>EKO Events Limited. 2026. Company Number: 13557941</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/about.js"></script>
+
+</body>
+</html>

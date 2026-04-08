@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | EKO Wedding Films</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--white:#fff;--text-dark:#2c2c2c;--text-body:#555;--text-light:#888;--dark-bg:#111;--accent:#c5a47e;--accent-hover:#b8935e;--font-heading:'Playfair Display',Georgia,serif;--font-body:'Lato','Helvetica Neue',sans-serif}
+        body{font-family:var(--font-body);background:var(--white);color:var(--text-body);line-height:1.75;font-weight:300;font-size:16px}
+        a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+        .container{max-width:1140px;margin:0 auto;padding:0 24px}
+        .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 0;background:var(--white);box-shadow:0 2px 20px rgba(0,0,0,.08)}
+        .nav .container{display:flex;align-items:center;justify-content:space-between}
+        .nav-logo img{height:64px}
+        .nav-links{display:flex;gap:28px;list-style:none}
+        .nav-links a{font-size:13px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--text-body);transition:color .3s}
+        .nav-links a:hover{color:var(--text-dark)}
+        .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+        .nav-toggle span{display:block;width:24px;height:2px;background:var(--text-dark)}
+        .thankyou{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px}
+        .thankyou h1{font-family:var(--font-heading);font-size:42px;font-weight:400;color:var(--text-dark);margin-bottom:20px}
+        .thankyou p{max-width:480px;margin:0 auto 12px;line-height:1.8}
+        .thankyou .sub{font-size:15px;color:var(--text-light);margin-top:24px}
+        .btn-back{display:inline-block;margin-top:32px;padding:14px 36px;background:var(--accent);color:#fff;font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:background .3s}
+        .btn-back:hover{background:var(--accent-hover)}
+        @media(max-width:768px){.nav-links{display:none}.nav-toggle{display:flex}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:20px;gap:16px;box-shadow:0 8px 20px rgba(0,0,0,.08)}}
+    </style>
+</head>
+<body>
+<nav class="nav"><div class="container">
+    <a href="index.html" class="nav-logo"><img src="images/eko-logo-transparent.png" alt="EKO Events"></a>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Journal</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="packages.html">Packages</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+</div></nav>
+<section class="thankyou"><div>
+    <h1>Thank you</h1>
+    <p>Your message has been sent successfully. We typically respond within 24 hours and look forward to hearing about your wedding plans.</p>
+    <p class="sub">Call us on <a href="tel:01202059325" style="color:var(--accent)">01202 059325</a></p>
+    <p class="sub">Email: info&#64;ekoevents.co.uk</p>
+    <a href="index.html" class="btn-back">Back to Home</a>
+</div></section>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Gallery | Cinematic Wedding Films Dorset Hampshire | EKO</title>
+    <meta name="description" content="Browse real wedding moments from ceremonies across Dorset, Hampshire and South England. See our natural, candid filming style in action.">
+    <link rel="canonical" href="https://www.ekoevents.co.uk/gallery.html">
+    <meta name="keywords" content="wedding films gallery, wedding videography examples, Dorset wedding videos">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ekoevents.co.uk/gallery.html">
+    <meta property="og:title" content="Wedding Gallery | EKO Wedding Films">
+    <meta property="og:description" content="Browse real wedding moments from ceremonies across Dorset, Hampshire and South England. See our natural, candid filming style in action.">
+    <meta property="og:image" content="images/eko-logo.jpg">
+    <meta property="og:site_name" content="EKO Wedding Films">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wedding Gallery | EKO Wedding Films">
+    <meta name="twitter:description" content="Browse real wedding moments from ceremonies across Dorset, Hampshire and South England. See our natural, candid filming style in action.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --white: #ffffff;
+            --off-white: #f9f9f9;
+            --light-grey: #f2f2f2;
+            --mid-grey: #e0e0e0;
+            --text-dark: #2c2c2c;
+            --text-body: #555555;
+            --text-light: #888888;
+            --dark-bg: #1a1a1a;
+            --accent: #c5a47e;
+            --accent-hover: #b8935e;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Lato', 'Helvetica Neue', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--text-body);
+            line-height: 1.7;
+            font-weight: 300;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ── NAV ── */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.35s ease;
+        }
+
+        .nav.scrolled {
+            background: var(--white);
+            padding: 12px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo img { height: 64px; width: auto; }
+        .nav-logo .logo-white { display: block; }
+        .nav-logo .logo-dark { display: none; }
+        .nav.scrolled .nav-logo .logo-white { display: none; }
+        .nav.scrolled .nav-logo .logo-dark { display: block; }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--white); }
+        .nav-links a.active { color: var(--white); }
+        .nav.scrolled .nav-links a { color: var(--text-body); }
+        .nav.scrolled .nav-links a:hover,
+        .nav.scrolled .nav-links a.active { color: var(--text-dark); }
+
+        .nav-hitched img { height: 50px; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            transition: all 0.3s;
+        }
+
+        .nav.scrolled .nav-toggle span { background: var(--text-dark); }
+
+        /* ── PAGE HERO ── */
+        .page-hero {
+            background: var(--dark-bg);
+            padding: 160px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 40% 60%, rgba(197,164,126,0.06) 0%, transparent 65%);
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .page-hero p {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            color: rgba(255,255,255,0.55);
+            max-width: 520px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* ── FILTER TABS ── */
+        .filters {
+            padding: 40px 0 20px;
+            background: var(--white);
+            position: sticky;
+            top: 62px;
+            z-index: 50;
+            border-bottom: 1px solid var(--light-grey);
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 22px;
+            border: 1px solid var(--mid-grey);
+            background: var(--white);
+            color: var(--text-body);
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .filter-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--white);
+        }
+
+        /* ── MASONRY GALLERY ── */
+        .gallery-section {
+            padding: 40px 0 80px;
+            background: var(--off-white);
+        }
+
+        .masonry {
+            columns: 3;
+            column-gap: 16px;
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            background: var(--white);
+            opacity: 0;
+            transform: translateY(16px);
+            animation: itemIn 0.5s forwards;
+        }
+
+        .masonry-item.hidden {
+            display: none;
+        }
+
+        .masonry-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .masonry-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .masonry-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(26,26,26,0.75) 0%,
+                rgba(26,26,26,0.15) 40%,
+                transparent 100%
+            );
+            opacity: 0;
+            transition: opacity 0.4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .masonry-item:hover .masonry-overlay { opacity: 1; }
+
+        .masonry-overlay h4 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .masonry-overlay span {
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 0.5px;
+        }
+
+        .masonry-expand {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s, background 0.3s;
+        }
+
+        .masonry-item:hover .masonry-expand { opacity: 1; }
+        .masonry-expand:hover { background: rgba(255,255,255,0.3); }
+
+        .masonry-expand svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--white);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        @keyframes itemIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* stagger */
+        .masonry-item:nth-child(1)  { animation-delay: 0.00s; }
+        .masonry-item:nth-child(2)  { animation-delay: 0.06s; }
+        .masonry-item:nth-child(3)  { animation-delay: 0.12s; }
+        .masonry-item:nth-child(4)  { animation-delay: 0.18s; }
+        .masonry-item:nth-child(5)  { animation-delay: 0.24s; }
+        .masonry-item:nth-child(6)  { animation-delay: 0.30s; }
+        .masonry-item:nth-child(7)  { animation-delay: 0.36s; }
+        .masonry-item:nth-child(8)  { animation-delay: 0.42s; }
+        .masonry-item:nth-child(9)  { animation-delay: 0.48s; }
+        .masonry-item:nth-child(10) { animation-delay: 0.54s; }
+        .masonry-item:nth-child(11) { animation-delay: 0.60s; }
+        .masonry-item:nth-child(12) { animation-delay: 0.66s; }
+        .masonry-item:nth-child(13) { animation-delay: 0.72s; }
+        .masonry-item:nth-child(14) { animation-delay: 0.78s; }
+        .masonry-item:nth-child(15) { animation-delay: 0.84s; }
+        .masonry-item:nth-child(16) { animation-delay: 0.90s; }
+
+        /* ── LIGHTBOX ── */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(10,10,10,0.94);
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .lightbox.open { display: flex; }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 32px;
+            cursor: pointer;
+            z-index: 10;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .lightbox-close:hover { opacity: 1; }
+
+        .lightbox-img {
+            max-width: 88vw;
+            max-height: 80vh;
+            object-fit: contain;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+        }
+
+        .lightbox-caption {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .lightbox-caption h4 {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--white);
+        }
+
+        .lightbox-caption span {
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: var(--white);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background 0.3s;
+        }
+
+        .lightbox-nav:hover { background: rgba(255,255,255,0.18); }
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+
+        /* ── CTA BAND ── */
+        .cta-band {
+            background: var(--dark-bg);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-band h2 {
+            font-family: var(--font-heading);
+            font-size: 30px;
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .cta-band p {
+            color: rgba(255,255,255,0.6);
+            max-width: 500px;
+            margin: 0 auto 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .btn:hover { background: var(--accent-hover); }
+
+        .btn-outline {
+            background: none;
+            border: 1px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--dark-bg);
+        }
+
+        /* ── FOOTER ── */
+        .footer {
+            background: var(--dark-bg);
+            color: rgba(255,255,255,0.6);
+            padding: 50px 0 30px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo img { height: 32px; margin-bottom: 12px; }
+
+        .footer-nav {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+            transition: color 0.3s;
+        }
+
+        .footer-nav a:hover { color: var(--white); }
+
+        .footer-contact-mini {
+            list-style: none;
+            font-size: 13px;
+        }
+
+        .footer-contact-mini li { padding: 3px 0; }
+        .footer-contact-mini a:hover { color: var(--white); }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .footer-bottom a { color: rgba(255,255,255,0.6); }
+        .footer-bottom a:hover { color: var(--white); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .masonry { columns: 2; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-hitched { display: none; }
+            .nav-toggle { display: flex; }
+
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0; right: 0;
+                background: var(--white);
+                padding: 20px;
+                gap: 16px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            }
+
+            .nav-links.open a { color: var(--text-body) !important; }
+
+            .masonry { columns: 2; column-gap: 10px; }
+            .masonry-item { margin-bottom: 10px; }
+            .filters { top: 56px; }
+        }
+
+        @media (max-width: 480px) {
+            .masonry { columns: 1; }
+        }
+    
+        /* ─── PREMIUM INTERACTIONS ─── */
+        
+        /* Button hover fill */
+        .btn-gold, .fbtn, .form-submit {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .btn-gold::before, .fbtn::before, .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: var(--accent-hover);
+            transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: -1;
+        }
+        .btn-gold:hover::before, .fbtn:hover::before, .form-submit:hover::before { left: 0; }
+
+        /* Card hover lift */
+        .fcard, .diff-card, .feature-card, .package-card, .card, .related-card {
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .fcard:hover, .diff-card:hover, .feature-card:hover, .card:hover, .related-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+        }
+
+        /* Nav link underline */
+        .nav-links a { position: relative; }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 1px;
+            background: var(--accent);
+            transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        /* Testimonial fade */
+        .titem.active, .testimonial-item.active {
+            animation: fadeQuote 0.5s ease;
+        }
+        @keyframes fadeQuote {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FAQ smooth expand */
+        .faq-a, .faq-answer, .faq-cat-body {
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Image placeholder hover */
+
+        /* Video gallery items */
+        .video-thumb-gallery {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-size: cover; background-position: center;
+            overflow: hidden;
+        }
+        .video-thumb-gallery::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.6) 100%);
+            transition: background 0.4s;
+        }
+        .masonry-item:hover .video-thumb-gallery::after {
+            background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.7) 100%);
+        }
+        .play-icon-gallery {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.92);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 2;
+            transition: all 0.35s;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        }
+        .masonry-item:hover .play-icon-gallery {
+            background: var(--accent);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .play-icon-gallery::after {
+            content: '';
+            border-style: solid;
+            border-width: 11px 0 11px 17px;
+            border-color: transparent transparent transparent #2c2c2c;
+            margin-left: 5px;
+            transition: border-color 0.35s;
+        }
+        .masonry-item:hover .play-icon-gallery::after {
+            border-color: transparent transparent transparent #fff;
+        }
+        /* Video lightbox */
+        .video-lightbox {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 9999;
+            align-items: center; justify-content: center;
+            padding: 24px;
+        }
+        .video-lightbox.open { display: flex; }
+        .video-lightbox-inner {
+            position: relative;
+            width: 100%; max-width: 1100px;
+            aspect-ratio: 16/9;
+        }
+        .video-lightbox iframe {
+            width: 100%; height: 100%; border: none;
+        }
+        .video-lightbox-close {
+            position: absolute; top: -44px; right: 0;
+            background: none; border: none;
+            color: #fff; font-size: 32px;
+            cursor: pointer; padding: 8px 12px;
+        }
+
+        .img-placeholder { transition: background 0.4s; }
+        .img-placeholder:hover { background: #eaeaea; }
+
+        /* Hero scroll pulse */
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.2; transform: scaleY(0.6); }
+            50% { opacity: 1; transform: scaleY(1); }
+        }
+        .hero-scroll span { animation: scrollPulse 2.5s ease-in-out infinite; }
+
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ekoevents.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gallery",
+      "item": "https://www.ekoevents.co.uk/gallery.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+    <div class="container">
+        <a href="index.html" class="nav-logo">
+            <img class="logo-white" src="images/eko-logo-white.png" alt="EKO Events">
+            <img class="logo-dark" src="images/eko-logo-transparent.png" alt="EKO Events">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://www.hitched.co.uk/wedding-videographers/eko-wedding-videography_351667.htm" class="nav-hitched" target="_blank">
+            <img src="https://www.hitched.co.uk/images/sellos/partner--gg351667.png" alt="Hitched.co.uk partner">
+        </a>
+        <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background-image:linear-gradient(rgba(17,17,17,0.7),rgba(17,17,17,0.8)),url('images/confetti-church-exit.jpg');background-size:cover;background-position:center;">
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Wedding films from real couples across Dorset, Hampshire &amp; South England.</p>
+    </div>
+</section>
+
+<!-- FILTER TABS -->
+<div class="filters">
+    <div class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Films</button>
+            <button class="filter-btn" data-filter="full">Full Wedding Films</button>
+            <button class="filter-btn" data-filter="highlights">Highlight Reels</button>
+        </div>
+    </div>
+</div>
+
+<!-- MASONRY GALLERY -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="masonry" id="masonry">
+            <div class="masonry-item video-item" data-cat="full" data-vid="f680gBHW-PM" onclick="openVideoLb('f680gBHW-PM')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/f680gBHW-PM/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Loach</h4>
+                    <span>Dorset Wedding Film</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="full" data-vid="1LPhqivb1SY" onclick="openVideoLb('1LPhqivb1SY')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/1LPhqivb1SY/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Dean</h4>
+                    <span>Hampshire Wedding Film</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="highlights" data-vid="xfCAPm5qMfY" onclick="openVideoLb('xfCAPm5qMfY')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/xfCAPm5qMfY/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Hubbard</h4>
+                    <span>Wedding Highlights</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="full" data-vid="dY4_G86eaLc" onclick="openVideoLb('dY4_G86eaLc')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/dY4_G86eaLc/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Stephens</h4>
+                    <span>The Italian Villa, Dorset</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="highlights" data-vid="TtE-JlQILJE" onclick="openVideoLb('TtE-JlQILJE')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/TtE-JlQILJE/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Watts</h4>
+                    <span>Sandbanks, Poole</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="full" data-vid="GG_4qG1jzdo" onclick="openVideoLb('GG_4qG1jzdo')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/GG_4qG1jzdo/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Walsh</h4>
+                    <span>Dorset Wedding Film</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="highlights" data-vid="CC0kjieKyIQ" onclick="openVideoLb('CC0kjieKyIQ')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/CC0kjieKyIQ/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Bouyer</h4>
+                    <span>Wedding Highlights</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="full" data-vid="8HUL6nXJIfU" onclick="openVideoLb('8HUL6nXJIfU')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/8HUL6nXJIfU/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Lucas</h4>
+                    <span>Hampshire Wedding</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="highlights" data-vid="x5-wfwfBxkw" onclick="openVideoLb('x5-wfwfBxkw')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/x5-wfwfBxkw/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Lottie &amp; Henry</h4>
+                    <span>Wedding Highlights</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="full" data-vid="HieS0Yq8q7U" onclick="openVideoLb('HieS0Yq8q7U')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/HieS0Yq8q7U/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Dwight</h4>
+                    <span>Dorset Wedding Film</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-cat="full" data-vid="_75x1m0U5DA" onclick="openVideoLb('_75x1m0U5DA')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/_75x1m0U5DA/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Moore</h4>
+                    <span>Wedding Film</span>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO LIGHTBOX -->
+<div class="video-lightbox" id="videoLightbox" onclick="closeVideoLb(event)">
+    <div class="video-lightbox-inner">
+        <button class="video-lightbox-close" onclick="closeVideoLb(event)">&times;</button>
+        <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+function openVideoLb(id){
+    var lb=document.getElementById('videoLightbox');
+    var f=document.getElementById('videoFrame');
+    f.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    lb.classList.add('open');
+    document.body.style.overflow='hidden';
+}
+function closeVideoLb(e){
+    if(e&&e.target&&e.target.tagName!=='BUTTON'&&!e.target.classList.contains('video-lightbox'))return;
+    var lb=document.getElementById('videoLightbox');
+    var f=document.getElementById('videoFrame');
+    f.src='';
+    lb.classList.remove('open');
+    document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){
+        var lb=document.getElementById('videoLightbox');
+        if(lb&&lb.classList.contains('open')){
+            document.getElementById('videoFrame').src='';
+            lb.classList.remove('open');
+            document.body.style.overflow='';
+        }
+    }
+});
+</script>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Love what you&nbsp;see?</h2>
+        <p>Every wedding is unique. Let's discuss how we can capture yours with the same care and attention.</p>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/eko-logo-white.png" alt="EKO Events">
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="footer-contact-mini">
+                <li><a href="tel:01202059325">01202 059325</a></li>
+                <li><a href="mailto:info&#64;ekoevents.co.uk">info&#64;ekoevents.co.uk</a></li>
+                <li>Based in Bournemouth, UK</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <span>EKO Events Limited. 2026. Company Number: 13557941</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/gallery.js"></script>
+
+</body>
+</html>
