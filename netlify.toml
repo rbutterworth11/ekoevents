@@ -1,0 +1,15 @@
+# Redirect non-www to www (primary domain)
+[[redirects]]
+  from = "https://ekoevents.co.uk/*"
+  to = "https://www.ekoevents.co.uk/:splat"
+  status = 301
+  force = true
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
