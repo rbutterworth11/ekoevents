@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Terms &amp; Conditions | EKO Events</title>
+    <meta name="description" content="EKO Events Limited booking terms and conditions for live music and videography services.">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        :root{--white:#fff;--text-dark:#2c2c2c;--text-body:#555;--text-light:#888;--dark-bg:#111;--light-grey:#f5f5f3;--accent:#c5a47e;--accent-hover:#b8935e;--line:#e5e2dc;--font-heading:'Playfair Display',Georgia,serif;--font-body:'Lato','Helvetica Neue',sans-serif}
+        body{font-family:var(--font-body);background:var(--white);color:var(--text-body);line-height:1.75;font-weight:300;font-size:16px}
+        a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+
+        /* ── NAV ── */
+        .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 0;background:var(--white);box-shadow:0 2px 20px rgba(0,0,0,.08)}
+        .nav .container{display:flex;align-items:center;justify-content:space-between;max-width:1140px;margin:0 auto;padding:0 24px}
+        .nav-logo img{height:64px;width:auto}
+        .nav-links{display:flex;gap:28px;list-style:none}
+        .nav-links a{font-size:13px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--text-body);transition:color .3s}
+        .nav-links a:hover{color:var(--text-dark)}
+        .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+        .nav-toggle span{display:block;width:24px;height:2px;background:var(--text-dark)}
+
+        /* ── PAGE HERO ── */
+        .hero{position:relative;background:var(--dark-bg);padding:200px 0 100px;text-align:center;background-image:linear-gradient(rgba(17,17,17,0.55),rgba(17,17,17,0.7)),url('images/page-header.jpg');background-size:cover;background-position:center;overflow:hidden}
+        .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 70%,rgba(197,164,126,0.06) 0%,transparent 60%)}
+        .hero>*{position:relative;z-index:1}
+        .hero h1{font-family:var(--font-heading);font-size:52px;font-weight:400;color:#fff;letter-spacing:-0.5px}
+        .hero-sub{color:rgba(255,255,255,0.7);font-size:16px;margin-top:12px;font-weight:300}
+
+        /* ── CONTENT ── */
+        .container{max-width:1140px;margin:0 auto;padding:0 24px}
+        .terms-wrap{max-width:820px;margin:0 auto;padding:0 24px}
+        .intro{padding:48px 0 16px}
+        .intro p{font-size:17px;color:var(--text-body);line-height:1.8}
+
+        /* TOC */
+        nav.toc{margin:30px 0 8px;padding:28px 32px;background:var(--light-grey);border-left:3px solid var(--accent)}
+        nav.toc h2{font-family:var(--font-body);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:700}
+        nav.toc ol{list-style:none;columns:2;column-gap:36px}
+        nav.toc li{margin:0 0 10px;break-inside:avoid}
+        nav.toc a{color:var(--text-dark);text-decoration:none;font-size:15px;font-weight:400;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+        nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+        @media(max-width:620px){nav.toc ol{columns:1}}
+
+        /* Sections */
+        .terms-content{padding:18px 0 60px}
+        .terms-content section{padding:32px 0;border-bottom:1px solid var(--line)}
+        .terms-content section:last-of-type{border-bottom:0}
+        h2.sec{font-family:var(--font-heading);font-size:26px;color:var(--text-dark);font-weight:400;padding-bottom:12px;margin-bottom:20px;border-bottom:2px solid var(--accent);scroll-margin-top:100px}
+        h3.sub{font-family:var(--font-body);font-size:14px;color:var(--accent);font-weight:700;margin:24px 0 10px;letter-spacing:1px;text-transform:uppercase}
+        .terms-content p{margin:0 0 14px;font-size:16px;line-height:1.8}
+        .lead{font-weight:700;color:var(--text-dark)}
+        ul.plain{margin:0 0 14px 22px;list-style:disc}
+        ul.plain li{margin:0 0 8px;font-size:16px;line-height:1.8}
+
+        /* Cancellation table */
+        table.canc{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:15px}
+        table.canc th,table.canc td{border:1px solid var(--line);padding:12px 16px;text-align:left}
+        table.canc thead th{background:var(--light-grey);color:var(--text-dark);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:700}
+        table.canc tbody tr:nth-child(even){background:var(--light-grey)}
+
+        .note{background:var(--light-grey);border-left:3px solid var(--accent);padding:16px 20px;margin:18px 0;font-size:15px;color:var(--text-body);line-height:1.8}
+
+        .toplink{display:inline-block;margin-top:16px;color:var(--accent);text-decoration:none;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:400;border-bottom:1px solid transparent;transition:border-color .2s}
+        .toplink:hover{border-color:var(--accent)}
+
+        /* ── FOOTER ── */
+        .footer{background:var(--dark-bg);padding:60px 0 40px;color:rgba(255,255,255,0.5);font-size:13px;line-height:1.8}
+        .footer-inner{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;max-width:1140px;margin:0 auto;padding:0 24px}
+        .footer a{color:var(--accent);text-decoration:none;transition:color .3s}
+        .footer a:hover{color:var(--accent-hover)}
+        .footer-legal{max-width:560px}
+
+        /* ── MOBILE ── */
+        @media(max-width:768px){
+            .nav-links{display:none}
+            .nav-toggle{display:flex}
+            .nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:20px;gap:16px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+            .hero h1{font-size:36px}
+            .hero{padding:160px 0 60px}
+        }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLB0Z06LST"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JLB0Z06LST');
+</script>
+</head>
+<body id="top">
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav"><div class="container">
+    <a href="index.html" class="nav-logo"><img src="images/eko-logo-transparent.png" alt="EKO Events"></a>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Journal</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="packages.html">Packages</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+</div></nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+    <div class="container">
+        <h1>Terms &amp; Conditions</h1>
+        <p class="hero-sub">Live Music &amp; Videography Services &nbsp;|&nbsp; 2026 Edition</p>
+    </div>
+</section>
+
+<!-- ═══ CONTENT ═══ -->
+<div class="terms-wrap">
+
+    <div class="intro">
+        <p>These terms and conditions apply to all bookings made with EKO Events Limited (&ldquo;EKO Events&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) for live music and videography services. By paying a deposit you accept these terms in full. Please read them carefully and contact us if anything is unclear before you book.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+        <h2>Contents</h2>
+        <ol>
+            <li><a href="#s1">1. Booking</a></li>
+            <li><a href="#s2">2. Late Payment / Balance</a></li>
+            <li><a href="#s3">3. Cancellation</a></li>
+            <li><a href="#s4">4. Client Responsibilities (Live Music)</a></li>
+            <li><a href="#s5">5. Responsibilities of The Band</a></li>
+            <li><a href="#s6">6. Deputy &amp; Alternative Performers</a></li>
+            <li><a href="#s7">7. Performance, Setlist &amp; Quality</a></li>
+            <li><a href="#s8">8. Changes to the Schedule</a></li>
+            <li><a href="#s9">9. Expenses &amp; Equipment</a></li>
+            <li><a href="#s10">10. Videography</a></li>
+            <li><a href="#s11">11. Data Protection &amp; GDPR</a></li>
+            <li><a href="#s12">12. Client Behaviour &amp; Complaints</a></li>
+            <li><a href="#s13">13. Limitation of Liability</a></li>
+            <li><a href="#s14">14. Force Majeure</a></li>
+            <li><a href="#s15">15. General</a></li>
+        </ol>
+    </nav>
+
+</div>
+
+<main>
+<div class="terms-wrap terms-content">
+
+    <section id="s1">
+        <h2 class="sec">1. Booking</h2>
+        <p>Provisional dates are held for 7 days. A booking is confirmed by payment of a non-refundable deposit of 10&ndash;15% of the final quoted balance (the exact percentage is agreed with the client and stated on your invoice).</p>
+        <p>The booking is secured once the deposit is received within the invoice term (usually 7 days unless stated otherwise). Failure to pay the deposit within that period will result in the date being released.</p>
+        <p>The full balance must be paid no later than 30 days before the event date, with cleared funds received before the event date. If a booking is made less than 30 days before the event, the full quoted balance is required to secure the booking.</p>
+        <p><span class="lead">Payment confirms acceptance.</span> Payment of the deposit constitutes full and binding acceptance of these terms and conditions by the client, whether or not the contract has been separately signed.</p>
+    </section>
+
+    <section id="s2">
+        <h2 class="sec">2. Late Payment or Failure to Pay the Balance</h2>
+        <p>The client must pay the balance within the time specified above. If the client fails to do so, EKO Events has the right to terminate the booking without penalty. In that event the client remains subject to the cancellation fees set out in section 3.</p>
+        <p>If full payment of the balance is not received by the due date, the matter may be referred to the Musicians&rsquo; Union, our legal representatives, or a debt recovery firm, which will result in additional costs being added to the amount owed.</p>
+    </section>
+
+    <section id="s3">
+        <h2 class="sec">3. Cancellation</h2>
+        <p>Termination of a booking is not permitted by either the client or EKO Events / The Band unless both parties agree in writing to cancel. Written evidence is required from both parties. Where a booking is cancelled by mutual agreement, the deposit is retained by EKO Events.</p>
+        <h3 class="sub">Client Cancellation</h3>
+        <p>If the client wishes to cancel the booking for any reason, the cancellation fees in the table below apply. These fees are exclusive of the deposit, which is non-refundable in all cases. The fees reflect the costs incurred by EKO Events and the lost opportunity to accept an alternative booking for the reserved date, and are a genuine pre-estimate of that loss.</p>
+        <table class="canc">
+            <thead><tr><th>Cancellation timescale</th><th>Cancellation fee</th></tr></thead>
+            <tbody>
+                <tr><td>More than 365 days before the event</td><td>No fee</td></tr>
+                <tr><td>365 to 91 days before the event</td><td>60% of the full fee</td></tr>
+                <tr><td>90 to 61 days before the event</td><td>80% of the full fee</td></tr>
+                <tr><td>60 days or less before the event</td><td>Full fee</td></tr>
+            </tbody>
+        </table>
+        <p class="note">Cooling-off: where a booking is cancelled within 48 hours of confirmation, no cancellation fee applies (the deposit remains non-refundable). This does not apply where the booking was made within 7 days of the event date.</p>
+        <h3 class="sub">EKO Events / The Band Cancellation</h3>
+        <p>EKO Events / The Band will not cancel a confirmed booking. In the unlikely event that the provider must cancel due to circumstances beyond reasonable control (for example, illness of a band member or provider), EKO Events will make every effort to find a suitable replacement individual or service at a similar cost. Where this is successful and the client agrees to the replacement, the booking will be transferred to the new supplier. See also sections 6 and 14.</p>
+    </section>
+
+    <section id="s4">
+        <h2 class="sec">4. Responsibilities of the Client (Live Music)</h2>
+        <p>The venue must supply a safe power supply and provide a safe, dry and level performance area. The venue must hold any licences required for live performance and comply with all relevant health and safety legislation, and must not place The Band, their set or their equipment at risk of harm.</p>
+        <p>If the venue has a sound limiter, the client must find out the decibel (dB) level at which it is set and inform The Band / EKO Events in advance. The Band cannot be held responsible for non-performance, or for reduced performance quality, where a sound limiter is set too low for live amplified music.</p>
+        <p>Where The Band is on site for 3 hours or more, a reasonable free supply of soft drinks and a hot meal or buffet must be provided. An adequate, secure changing area with the correct number of chairs and a safe power source must also be provided.</p>
+        <p><span class="lead">Respect for performers and crew.</span> The client is responsible for ensuring that The Band, videographers and any EKO Events crew are treated with respect by the client, guests and other vendors throughout the booking. Performers and their working space must not be interfered with.</p>
+    </section>
+
+    <section id="s5">
+        <h2 class="sec">5. Responsibilities of The Band</h2>
+        <p>The Band will ensure they are under no conflicting obligation that would hinder or interfere with the booking, and will perform to their highest quality and ability, consistent with the manner advertised in promotional material.</p>
+        <p>The Band will provide all equipment required to perform to a high standard. Equipment is PAT tested annually, and certificates can be provided to event organisers on request ahead of the event.</p>
+        <p>The Band holds Public Liability Insurance with cover of up to &pound;5,000,000. A certificate of insurance is available for inspection on request for every booking.</p>
+        <p>The Band will dress suitably for the occasion (usually smart attire) in line with the client&rsquo;s reasonable requests, and will remain courteous and professional towards the client and venue throughout the booking and performance.</p>
+        <p>Band members are responsible for their own accounting, tax and legal contributions.</p>
+        <p>EKO Events will contact the client at least 4 weeks before the event to finalise details such as dress code, refreshments, payment, invoicing, parking and performance requests. Where a booking is made with less than 4 weeks&rsquo; notice, EKO Events will make contact as soon as possible after the booking is made.</p>
+    </section>
+
+    <section id="s6">
+        <h2 class="sec">6. Deputy and Alternative Performers (Live Music)</h2>
+        <p><span class="lead">Line-up may change.</span> The Band performs with its standard line-up wherever possible. However, the client acknowledges and accepts that the specific musicians performing, including the lead vocalist, may change. Live music acts routinely use experienced deputy (&ldquo;dep&rdquo;) performers, and the individuals shown in any promotional material, photographs or videos are representative of the act rather than a guarantee of the specific personnel on the day.</p>
+        <p><span class="lead">Use of deputies.</span> Where a regular member is unavailable due to illness, injury or other unforeseen circumstances, The Band will arrange a suitably skilled and experienced deputy of equivalent ability who maintains the style and standard of the act. The Band may use one or more deputy performers and is not obliged to notify the client in advance.</p>
+        <p><span class="lead">Not grounds for cancellation or refund.</span> The use of a deputy or alternative performer is not a breach of these terms, is not grounds for cancellation by the client, and does not entitle the client to a refund or reduction in fee. Engaging a deputy is always preferable to cancelling, and The Band will use deputies rather than cancel a booking wherever possible.</p>
+    </section>
+
+    <section id="s7">
+        <h2 class="sec">7. Performance, Setlist and Quality</h2>
+        <p><span class="lead">Setlist and running order.</span> The Band curates its setlist and running order using professional judgement to suit the event, venue and audience on the day. The specific songs performed, their order, and set timings may differ from any indicative setlist and may change during the performance to respond to the room. The Band will accommodate reasonable specific song requests, including a first dance, where notified in good time, but particular requests cannot be guaranteed.</p>
+        <p><span class="lead">Creative and artistic judgement.</span> Both live performance and video are creative services delivered to a professional standard. Musical interpretation, arrangement, filming style, shot selection and editing are matters of artistic judgement. Personal taste is subjective, and dissatisfaction with creative or stylistic decisions, where the service has been delivered as contracted, is not a breach of these terms and does not entitle the client to withhold payment or claim a refund.</p>
+        <p><span class="lead">Equipment faults during performance.</span> Occasional technical or equipment faults can occur with any live or recorded production. Where this happens, The Band or videographer will take reasonable steps to resolve the issue and continue as soon as practicable. A short interruption to address a fault is not a breach of these terms and is not grounds for a refund or reduction in fee.</p>
+        <p><span class="lead">Right to pause or stop.</span> The Band and videographers may pause, suspend or stop performing or filming, without refund and with the full fee remaining payable, where in their reasonable judgement: any person is abusive, threatening or aggressive towards them; guests or others interfere with, crowd or damage performers, the performance space or equipment (including placing drinks on or near equipment, or invading the stage); the supplied power, stage or environment becomes unsafe; or continuing would place any person or equipment at risk. The Band / videographer will, where it is safe and reasonable, raise the concern with the client or venue and allow an opportunity to resolve it before stopping.</p>
+        <p><span class="lead">Recording and streaming.</span> The Band&rsquo;s performance, arrangements and likeness must not be professionally or commercially recorded, broadcast, streamed or published without prior written permission. Informal guest photography and personal video for non-commercial use are permitted unless the client requests otherwise.</p>
+        <p><span class="lead">Filming by others.</span> Where the client engages a separate photographer or videographer, they must not unreasonably obstruct The Band or EKO Events crew. EKO Events accepts no liability for limitations on its own coverage caused by third-party suppliers, guests or venue restrictions.</p>
+    </section>
+
+    <section id="s8">
+        <h2 class="sec">8. Changes to the Agreed Performance Schedule</h2>
+        <p>Where possible, any changes to the performance schedule should be discussed with EKO Events / The Band at least 7 days before the event. Where this is not possible, changes should be agreed between the client and The Band before the performance.</p>
+        <p>If agreed changes result in a later finish time, an additional fee will be agreed between the parties and is payable directly to EKO Events on the day of the event.</p>
+        <p>If the event schedule overruns through no fault of The Band, The Band may finish at the agreed set finishing time and remains entitled to the full payment.</p>
+        <p>If the client requests The Band to perform for longer than scheduled on the event date, EKO Events may agree a further fee, payable on the day. EKO Events may also decline such a request without penalty.</p>
+    </section>
+
+    <section id="s9">
+        <h2 class="sec">9. Expenses and Equipment</h2>
+        <p>Final performance quotations are inclusive of expenses. The client is not responsible for any other band expenses, including but not limited to accommodation, travel, rehearsal time, or music purchase, unless otherwise agreed in writing.</p>
+        <p>Unless written permission is given, equipment supplied by EKO Events is not available for use by any other person, guest or performer under any circumstances. The equipment is expensive, fragile and essential to our livelihood. The client is responsible for any damage to equipment caused by any member of their party and is liable for the cost of repair in full, or for an equivalent replacement where repair is not possible or would cost more than replacement.</p>
+    </section>
+
+    <section id="s10">
+        <h2 class="sec">10. Videography</h2>
+        <p>The client must arrange for EKO Events to have access to all relevant venues at least one hour before the event. EKO Events will require a minimum of 30 minutes&rsquo; set-up time to capture speeches.</p>
+        <p>EKO Events aims to arrive on time but cannot be held liable for delay or non-attendance caused by events beyond our control, such as traffic, extreme weather, illness, incapacity or accident. In such cases the client&rsquo;s principal contact will be notified as soon as practicable to explore alternative arrangements.</p>
+        <p>The videographer should be briefed on the day&rsquo;s schedule before the event. EKO Events cannot be held liable for lost or missed footage where the schedule changes from that specified at the pre-event consultation and EKO Events is not informed.</p>
+        <p>The client must obtain any permissions required to film the wedding service and at any other location where filming takes place.</p>
+        <p><span class="lead">Drone use is never guaranteed.</span> Any drone filming is provisional and is never guaranteed. It is carried out solely at the operator&rsquo;s discretion and only where weather, wind, light, safety, airspace, and venue and site permissions allow. Drones cannot fly safely in high winds or rain. EKO Events accepts no liability, and no refund or reduction in fee applies, where drone footage cannot be captured for any reason outside our reasonable control. All drone operations are conducted by an operator holding the appropriate Civil Aviation Authority authorisation and a valid CAA Operator ID, in compliance with UK drone regulations.</p>
+        <p>Additional cameras or lighting may be required in low-light conditions. Restrictions imposed by the venue, church, photographer, guests or others, together with physical surroundings, safety, weather and acoustics, may limit the quality and scope of video coverage. EKO Events cannot guarantee that any specific footage, moment or person will be captured; recording is carried out according to the videographer&rsquo;s creative judgement, and EKO Events is not liable for sequences not included. Any element the client does not wish to appear in the final edit must be notified to EKO Events in writing before post-production begins.</p>
+        <p><span class="lead">Equipment and footage.</span> EKO Events uses high-quality, well-maintained equipment and takes all reasonable care to safeguard footage, including storage on encrypted drives, with master footage archived for one year after the event. We are not responsible for battery, device, memory or other technical failures beyond our reasonable control. In the unlikely event of a total failure to deliver, where all footage is lost or corrupted and no film can be produced, EKO Events&rsquo; liability is limited to a full refund of the fees paid for the videography service. This does not apply to partial loss, to footage limited by factors described elsewhere in this section, or to dissatisfaction with the delivered film. Save for the total-failure refund described here, EKO Events&rsquo; liability is limited as set out in section 13.</p>
+        <p><span class="lead">Delivery and revisions.</span> The final edit is usually completed within 4&ndash;6 weeks of the event. Editing may take longer, in some cases up to 12 weeks or more, where this is necessary or caused by factors outside our control, including supplier, software, illness or workload factors; EKO Events will keep the client informed. A digital copy of the footage is provided. Reasonable revisions are at the videographer&rsquo;s discretion, and revisions requested after the final copy has been delivered may incur an additional fee.</p>
+        <p><span class="lead">Satisfaction.</span> Both the live performance and the video are creative services delivered to a professional standard according to the performers&rsquo; and videographer&rsquo;s style and judgement. Personal taste is subjective. Dissatisfaction with creative or stylistic choices, where the service has been delivered as contracted, is not grounds for withholding payment, claiming a refund, or any reduction in fee. This is separate from, and does not affect, the total-failure refund for videography described above. Any concern should be raised through the complaints process in section 12.</p>
+        <p>EKO Events will assume all attendees consent to being filmed. If this is not the case, the client must notify EKO Events in writing in advance. EKO Events holds Public Liability Insurance with cover of up to &pound;5,000,000 in respect of its videography services; a certificate is available on request.</p>
+    </section>
+
+    <section id="s11">
+        <h2 class="sec">11. Data Protection and GDPR</h2>
+        <p>EKO Events processes personal data in accordance with the UK GDPR and the Data Protection Act 2018, acting as a data controller for the personal data we collect in connection with your booking.</p>
+        <p><span class="lead">What we collect and why.</span> We collect client and wedding-party contact details (names, telephone numbers, email addresses and, where relevant, social media links) to respond to enquiries, administer your booking and communicate before, during and after the event. Our lawful bases are performance of the contract and our legitimate interest in operating and promoting our business.</p>
+        <p><span class="lead">Retention.</span> Client contact data is retained for up to 2 years after the event for administration and enquiry purposes, unless we are required to keep it longer for legal or accounting reasons. For videography, master footage is archived for one year after the event.</p>
+        <p><span class="lead">Consent to use footage and images for marketing.</span> By accepting these terms, the client consents to EKO Events using photographs, video footage and extracts from the event for marketing and promotional purposes, including on the EKO Events website, social media channels, showreels, advertising and to show samples to prospective clients. The client may opt out of this use, or withdraw consent for future use at any time, by notifying EKO Events in writing at hello&#64;ekoevents.co.uk; we will not use the material for new promotion from the point the request is received, although material already published or in circulation may remain. If the client wishes to opt out entirely from the outset, they should notify us in writing before the deposit is paid.</p>
+        <p><span class="lead">Wedding party and guests.</span> The client confirms they have authority to provide the above consent in respect of their booking and will make members of their wedding party and guests aware that filming and photography are taking place and may be used by EKO Events as described. If any individual does not wish to be used in promotional material, the client must notify EKO Events in writing and we will take reasonable steps to exclude that individual from newly published promotional material.</p>
+        <p><span class="lead">Your rights.</span> Clients have the right to access, correct or request deletion of their personal data, to object to or restrict processing, and to withdraw consent to marketing use at any time. Requests can be made to hello&#64;ekoevents.co.uk.</p>
+    </section>
+
+    <section id="s12">
+        <h2 class="sec">12. Client Behaviour and Complaints</h2>
+        <p>EKO Events will not tolerate abuse, aggression or improper behaviour towards any member of its team or the company, whether direct or indirect, before, during or after the event. Where this occurs, EKO Events reserves the right to terminate its service (with the full fee remaining payable) and to pursue any legal action it considers appropriate. This is in addition to the right to pause or stop performing set out in section 7.</p>
+        <p>Any complaint should be made in writing to EKO Events within 30 days of the event. We will work with the client in good faith to reach a fair resolution. Full payment remains due while a complaint is being considered.</p>
+    </section>
+
+    <section id="s13">
+        <h2 class="sec">13. Limitation of Liability</h2>
+        <p><span class="lead">Liability cap.</span> Nothing in these terms excludes or limits liability for death or personal injury caused by negligence, fraud, or any liability that cannot lawfully be excluded. Subject to that, EKO Events&rsquo; total liability to the client arising out of or in connection with a booking, whether in contract, tort (including negligence) or otherwise, is limited in aggregate to the total fees actually paid by the client for the relevant service (live music or videography) to which the claim relates.</p>
+        <p><span class="lead">Indirect loss.</span> EKO Events is not liable for any indirect or consequential loss, or for loss of enjoyment, opportunity or expectation, beyond the cap set out above.</p>
+    </section>
+
+    <section id="s14">
+        <h2 class="sec">14. Force Majeure</h2>
+        <p><span class="lead">Events beyond control.</span> Neither party is liable for failure or delay in performing its obligations where caused by events beyond its reasonable control, including act of nature (fire, flood, storm, extreme weather), accident, serious illness or incapacity, epidemic or pandemic, war, terrorism, civil disorder, strike, closure of borders, venue closure, travel disruption, or an order or change of law or policy by a government or authority.</p>
+        <p><span class="lead">What happens.</span> Where a force majeure event prevents an event going ahead, the parties will use reasonable efforts to reschedule to a mutually acceptable date and transfer the booking to that date where possible. Where the provider cannot fulfil a rescheduled date, EKO Events will make reasonable efforts to arrange a suitable replacement at a similar cost. EKO Events is not liable for any losses incurred by the client or third parties arising from a force majeure event.</p>
+    </section>
+
+    <section id="s15">
+        <h2 class="sec">15. General</h2>
+        <p><span class="lead">Consumer rights.</span> Nothing in these terms affects the client&rsquo;s statutory rights under the Consumer Rights Act 2015 or other applicable consumer legislation. Where a client books as a consumer, statutory rights apply alongside these terms.</p>
+        <p><span class="lead">Governing law.</span> These terms are governed by the law of England and Wales, and the courts of England and Wales have exclusive jurisdiction over any dispute arising from them.</p>
+        <p><span class="lead">Acceptance.</span> Payment of the deposit constitutes full acceptance of these terms and conditions.</p>
+        <a class="toplink" href="#top">&uarr; Back to top</a>
+    </section>
+
+</div>
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer"><div class="footer-inner">
+    <div class="footer-legal">
+        EKO Events Limited &middot; Registered Company Number 13557941<br>
+        Registered office: 71&ndash;75 Shelton Street, Covent Garden, London, WC2H 9JQ<br>
+        Terms &amp; Conditions &mdash; 2026 edition. We review these terms annually.
+    </div>
+    <div>
+        <a href="https://www.ekoevents.co.uk">www.ekoevents.co.uk</a><br>
+        <a href="mailto:hello&#64;ekoevents.co.uk">hello&#64;ekoevents.co.uk</a>
+    </div>
+</div></footer>
+
+</body>
+</html>
