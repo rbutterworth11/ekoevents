@@ -1,21 +1,3 @@
-var filterBtns=document.querySelectorAll('.filter-btn');
-var masonryItems=document.querySelectorAll('.masonry-item');
-for(var i=0;i<filterBtns.length;i++){
-(function(btn){
-btn.addEventListener('click',function(){
-for(var j=0;j<filterBtns.length;j++)filterBtns[j].classList.remove('active');
-btn.classList.add('active');
-var cat=btn.getAttribute('data-filter');
-for(var k=0;k<masonryItems.length;k++){
-if(cat==='all'||masonryItems[k].getAttribute('data-cat')===cat){
-masonryItems[k].classList.remove('hidden');
-}else{
-masonryItems[k].classList.add('hidden');
-}
-}
-});
-})(filterBtns[i]);
-}
 var lbIdx=0;
 function getVisible(){
 var all=document.querySelectorAll('.masonry-item');

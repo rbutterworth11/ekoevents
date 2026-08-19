@@ -166,62 +166,20 @@
             position: relative;
         }
 
-        /* ── FILTER TABS ── */
-        .filters {
-            padding: 40px 0 20px;
-            background: var(--white);
-            position: sticky;
-            top: 62px;
-            z-index: 50;
-            border-bottom: 1px solid var(--light-grey);
-        }
-
-        .filter-bar {
-            display: flex;
-            gap: 8px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 8px 22px;
-            border: 1px solid var(--mid-grey);
-            background: var(--white);
-            color: var(--text-body);
-            font-family: var(--font-body);
-            font-size: 12px;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .filter-btn:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-
-        .filter-btn.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: var(--white);
-        }
-
         /* ── MASONRY GALLERY ── */
         .gallery-section {
-            padding: 40px 0 80px;
+            padding: 60px 0 80px;
             background: var(--off-white);
         }
 
         .masonry {
-            columns: 3;
-            column-gap: 16px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
         }
 
         .masonry-item {
-            break-inside: avoid;
-            margin-bottom: 16px;
+            margin-bottom: 0;
             position: relative;
             overflow: hidden;
             cursor: pointer;
@@ -505,7 +463,7 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 1024px) {
-            .masonry { columns: 2; }
+            .masonry { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
@@ -526,13 +484,11 @@
 
             .nav-links.open a { color: var(--text-body) !important; }
 
-            .masonry { columns: 2; column-gap: 10px; }
-            .masonry-item { margin-bottom: 10px; }
-            .filters { top: 56px; }
+            .masonry { grid-template-columns: repeat(2, 1fr); gap: 10px; }
         }
 
         @media (max-width: 480px) {
-            .masonry { columns: 1; }
+            .masonry { grid-template-columns: 1fr; }
         }
     
         /* ─── PREMIUM INTERACTIONS ─── */
@@ -736,128 +692,127 @@
     </div>
 </section>
 
-<!-- FILTER TABS -->
-<div class="filters">
-    <div class="container">
-        <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">All Films</button>
-            <button class="filter-btn" data-filter="full">Full Wedding Films</button>
-            <button class="filter-btn" data-filter="highlights">Highlight Reels</button>
-        </div>
-    </div>
-</div>
-
 <!-- MASONRY GALLERY -->
 <section class="gallery-section">
     <div class="container">
         <div class="masonry" id="masonry">
-            <div class="masonry-item video-item" data-cat="full" data-vid="f680gBHW-PM" onclick="openVideoLb('f680gBHW-PM')">
+            <div class="masonry-item video-item" data-vid="RZ_RjxUDzfQ" onclick="openVideoLb('RZ_RjxUDzfQ')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/RZ_RjxUDzfQ/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Hammond</h4>
+                    <span>Highcliffe Castle</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-vid="f680gBHW-PM" onclick="openVideoLb('f680gBHW-PM')">
                 <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/f680gBHW-PM/hqdefault.jpg');">
                     <div class="play-icon-gallery"></div>
                 </div>
                 <div class="masonry-overlay">
                     <h4>Mr &amp; Mrs Loach</h4>
-                    <span>Dorset Wedding Film</span>
+                    <span>Highcliffe Castle</span>
                 </div>
             </div>
 
-            <div class="masonry-item video-item" data-cat="full" data-vid="1LPhqivb1SY" onclick="openVideoLb('1LPhqivb1SY')">
-                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/1LPhqivb1SY/hqdefault.jpg');">
-                    <div class="play-icon-gallery"></div>
-                </div>
-                <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Dean</h4>
-                    <span>Hampshire Wedding Film</span>
-                </div>
-            </div>
-
-            <div class="masonry-item video-item" data-cat="highlights" data-vid="xfCAPm5qMfY" onclick="openVideoLb('xfCAPm5qMfY')">
-                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/xfCAPm5qMfY/hqdefault.jpg');">
-                    <div class="play-icon-gallery"></div>
-                </div>
-                <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Hubbard</h4>
-                    <span>Wedding Highlights</span>
-                </div>
-            </div>
-
-            <div class="masonry-item video-item" data-cat="full" data-vid="dY4_G86eaLc" onclick="openVideoLb('dY4_G86eaLc')">
-                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/dY4_G86eaLc/hqdefault.jpg');">
-                    <div class="play-icon-gallery"></div>
-                </div>
-                <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Stephens</h4>
-                    <span>The Italian Villa, Dorset</span>
-                </div>
-            </div>
-
-            <div class="masonry-item video-item" data-cat="highlights" data-vid="TtE-JlQILJE" onclick="openVideoLb('TtE-JlQILJE')">
-                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/TtE-JlQILJE/hqdefault.jpg');">
-                    <div class="play-icon-gallery"></div>
-                </div>
-                <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Watts</h4>
-                    <span>Sandbanks, Poole</span>
-                </div>
-            </div>
-
-            <div class="masonry-item video-item" data-cat="full" data-vid="GG_4qG1jzdo" onclick="openVideoLb('GG_4qG1jzdo')">
-                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/GG_4qG1jzdo/hqdefault.jpg');">
-                    <div class="play-icon-gallery"></div>
-                </div>
-                <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Walsh</h4>
-                    <span>Dorset Wedding Film</span>
-                </div>
-            </div>
-
-            <div class="masonry-item video-item" data-cat="highlights" data-vid="CC0kjieKyIQ" onclick="openVideoLb('CC0kjieKyIQ')">
+            <div class="masonry-item video-item" data-vid="CC0kjieKyIQ" onclick="openVideoLb('CC0kjieKyIQ')">
                 <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/CC0kjieKyIQ/hqdefault.jpg');">
                     <div class="play-icon-gallery"></div>
                 </div>
                 <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Bouyer</h4>
-                    <span>Wedding Highlights</span>
+                    <h4>Mr &amp; Mrs Watts</h4>
+                    <span>Clock Barn</span>
                 </div>
             </div>
 
-            <div class="masonry-item video-item" data-cat="full" data-vid="8HUL6nXJIfU" onclick="openVideoLb('8HUL6nXJIfU')">
+            <div class="masonry-item video-item" data-vid="1LPhqivb1SY" onclick="openVideoLb('1LPhqivb1SY')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/1LPhqivb1SY/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Hubbard</h4>
+                    <span>Brockenhurst</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-vid="dY4_G86eaLc" onclick="openVideoLb('dY4_G86eaLc')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/dY4_G86eaLc/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Dean</h4>
+                    <span>The Three Tuns</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-vid="TtE-JlQILJE" onclick="openVideoLb('TtE-JlQILJE')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/TtE-JlQILJE/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Walsh</h4>
+                    <span>Clock Barn</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-vid="GG_4qG1jzdo" onclick="openVideoLb('GG_4qG1jzdo')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/GG_4qG1jzdo/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Bouyer</h4>
+                    <span>Crowcombe Court</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-vid="8HUL6nXJIfU" onclick="openVideoLb('8HUL6nXJIfU')">
                 <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/8HUL6nXJIfU/hqdefault.jpg');">
                     <div class="play-icon-gallery"></div>
                 </div>
                 <div class="masonry-overlay">
-                    <h4>Mr &amp; Mrs Lucas</h4>
-                    <span>Hampshire Wedding</span>
+                    <h4>Mr &amp; Mrs Jones</h4>
+                    <span>Bowerchalke Barn</span>
                 </div>
             </div>
 
-            <div class="masonry-item video-item" data-cat="highlights" data-vid="x5-wfwfBxkw" onclick="openVideoLb('x5-wfwfBxkw')">
+            <div class="masonry-item video-item" data-vid="xfCAPm5qMfY" onclick="openVideoLb('xfCAPm5qMfY')">
+                <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/xfCAPm5qMfY/hqdefault.jpg');">
+                    <div class="play-icon-gallery"></div>
+                </div>
+                <div class="masonry-overlay">
+                    <h4>Mr &amp; Mrs Stephens</h4>
+                    <span>Deans Court</span>
+                </div>
+            </div>
+
+            <div class="masonry-item video-item" data-vid="x5-wfwfBxkw" onclick="openVideoLb('x5-wfwfBxkw')">
                 <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/x5-wfwfBxkw/hqdefault.jpg');">
                     <div class="play-icon-gallery"></div>
                 </div>
                 <div class="masonry-overlay">
-                    <h4>Lottie &amp; Henry</h4>
-                    <span>Wedding Highlights</span>
+                    <h4>Mr &amp; Mrs Ward</h4>
+                    <span>Bowerchalke Barn</span>
                 </div>
             </div>
 
-            <div class="masonry-item video-item" data-cat="full" data-vid="HieS0Yq8q7U" onclick="openVideoLb('HieS0Yq8q7U')">
+            <div class="masonry-item video-item" data-vid="HieS0Yq8q7U" onclick="openVideoLb('HieS0Yq8q7U')">
                 <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/HieS0Yq8q7U/hqdefault.jpg');">
                     <div class="play-icon-gallery"></div>
                 </div>
                 <div class="masonry-overlay">
                     <h4>Mr &amp; Mrs Dwight</h4>
-                    <span>Dorset Wedding Film</span>
+                    <span>The Lord Bute</span>
                 </div>
             </div>
 
-            <div class="masonry-item video-item" data-cat="full" data-vid="_75x1m0U5DA" onclick="openVideoLb('_75x1m0U5DA')">
+            <div class="masonry-item video-item" data-vid="_75x1m0U5DA" onclick="openVideoLb('_75x1m0U5DA')">
                 <div class="video-thumb-gallery" style="background-image:url('https://i.ytimg.com/vi/_75x1m0U5DA/hqdefault.jpg');">
                     <div class="play-icon-gallery"></div>
                 </div>
                 <div class="masonry-overlay">
                     <h4>Mr &amp; Mrs Moore</h4>
-                    <span>Wedding Film</span>
+                    <span>Wimborne Minster</span>
                 </div>
             </div>
 
