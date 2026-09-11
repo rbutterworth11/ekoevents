@@ -13,3 +13,58 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# ── 301s for retired/moved URLs (clears Search Console 404s) ──
+
+# Journal articles were once advertised under /journal/ but live at the root
+[[redirects]]
+  from = "/journal/*"
+  to = "/:splat"
+  status = 301
+
+# Old blog structure
+[[redirects]]
+  from = "/blog/*"
+  to = "/journal.html"
+  status = 301
+
+[[redirects]]
+  from = "/2025/10/08/coastal-wedding-videography-dorset-hampshire/"
+  to = "/coastal-wedding-videography-dorset-hampshire.html"
+  status = 301
+
+[[redirects]]
+  from = "/2025/10/07/when-to-book-wedding-videographer-dorset-hampshire/"
+  to = "/wedding-planning-timeline.html"
+  status = 301
+
+[[redirects]]
+  from = "/2025/*"
+  to = "/journal.html"
+  status = 301
+
+# Old site pages
+[[redirects]]
+  from = "/about-wedding-videographers-dorset-hampshire/"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/author/*"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/entertainment/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/media-services/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/decor-and-equipment/*"
+  to = "/"
+  status = 301
